@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+
+body {
+  height: 100%;
+  background: #ff5d71;
+  color: white;
+  text-align: center;
+}
+
+.main_container{
+  height:100%;
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(  circle closest-corner at center , #ff5d71, #ff5d71,#030303);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left_side{
+  background: transparent;
+  height:100%;
+  width:20%;
+  float: left;
+}
+
+.centre{
+  background: transparent;
+  height: 100%;
+  width: 60%;
+  float:left;
+  align-content: center;
+}
+
+.right_side{
+  background: transparent;
+  height: 100%;
+  width: 20%;
+  float: right;
+}
+
+.heading {
+  display: inline-block;
+  font-size: 150px;
+  padding-top: 220px;
+  font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase;
+  background: radial-gradient(
+    circle farthest-corner at center center,
+    #ccc,
+    #111
+  ) no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.services{
+height: 100px;
+width: 100%;
+}
+
+.contacts{
+  height: 100px;
+  width: 100%;
+}
+
+.infos{
+  height: 100px;
+  width: 100%;
+}
+
+.service{
+  margin-top: 10px;
+  background: transparent;
+  height:80px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  position: relative;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.contact{
+  margin-top: 10px;
+  background: transparent;
+  height:80px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  position: relative;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.info{
+  margin-top: 10px;
+  background: transparent;
+  height:80px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  position: relative;
+  font-family: 'Syncopate', sans-serif;
+}
+
+.anim{
+  animation: entry 2s ease-out ;
+  animation-fill-mode: forwards;
+}
+
+.line{
+  height: 3px;
+  width: 0px;
+  background-color: white;
+  animation: line_anim 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.services:hover{
+  opacity: 0.5;
+}
+.contacts:hover{
+  opacity: 0.5;
+}
+.infos:hover{
+  opacity: 0.5;
+}
+
+@keyframes line_anim {
+  0%{
+    width: 0px;
+    opacity: 0.2;
+  }
+
+  100%{
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes entry {
+
+    0%{ margin-left: 0%;
+        opacity: 0.2;}
+    100%{margin-left: 20%;
+          opacity: 1;}
+
+}
+
+.data{
+  font-family: 'Syncopate', sans-serif;
+  margin-top: 300px;
+  animation: upword 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes upword {
+  0%{margin-top: 300px;
+      opacity: 0.2;}
+  100%{margin-top: 0px;
+        opacity: 1;}
+}
+
+@media screen and (min-width:200px) and (max-width:1000px){
+    .heading{
+        /* display: none; */
+        flex-direction: column-reverse;
+    }
+
+}
