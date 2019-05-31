@@ -77,6 +77,11 @@ width: 100%;
   width: 100%;
 }
 
+.demos{
+  height: 100px;
+  width: 100%;
+}
+
 .project{
   margin-top: 10px;
   background: transparent;
@@ -121,6 +126,16 @@ width: 100%;
   font-family: 'Syncopate', sans-serif;
 }
 
+.demo{
+  margin-top: 10px;
+  background: transparent;
+  height:80px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  position: relative;
+  font-family: 'Syncopate', sans-serif;
+}
 .anim{
   animation: entry 2s ease-out ;
   animation-fill-mode: forwards;
@@ -145,6 +160,10 @@ width: 100%;
 }
 
 .projects:hover{
+  opacity: 0.5;
+}
+
+.demos:hover{
   opacity: 0.5;
 }
 
