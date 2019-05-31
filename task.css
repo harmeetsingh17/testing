@@ -72,6 +72,22 @@ width: 100%;
   width: 100%;
 }
 
+.projects{
+  height: 100px;
+  width: 100%;
+}
+
+.project{
+  margin-top: 10px;
+  background: transparent;
+  height:80px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  position: relative;
+  font-family: 'Syncopate', sans-serif;
+}
+
 .service{
   margin-top: 10px;
   background: transparent;
@@ -128,6 +144,10 @@ width: 100%;
   opacity: 0.5;
 }
 
+.projects:hover{
+  opacity: 0.5;
+}
+
 @keyframes line_anim {
   0%{
     width: 0px;
@@ -166,7 +186,6 @@ width: 100%;
 
 @media screen and (min-width:200px) and (max-width:1000px){
     .heading{
-        /* display: none; */
         flex-direction: column-reverse;
     }
 
